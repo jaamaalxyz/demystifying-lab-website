@@ -1,7 +1,11 @@
-import { Inter } from 'next/font/google';
+import { Inter, Noto_Sans_Bengali } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
+const notoSansBengali = Noto_Sans_Bengali({
+  weight: ['200', '400', '500', '600', '700', '900'],
+  subsets: ['bengali', 'latin'],
+});
 
 export const metadata = {
   title: 'Demystifying Lab',
@@ -32,7 +36,7 @@ export default function RootLayout({ children }) {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={notoSansBengali.className}>{children}</body>
     </html>
   );
 }
