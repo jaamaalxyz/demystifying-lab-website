@@ -10,14 +10,26 @@ const Hero = () => {
         alt="Demystifying Lab Logo"
         width={75}
         height={75}
-        priority
+        priority={true}
         className={styles.logo}
       />
-      <h1 className={styles.title}>Demystifying Lab</h1>
-      <h3 className={styles.subtitle}>Demystify Anything and Everything</h3>
-      <p className={styles.tagline}>এখন সবকিছু শেখা হবে আরও সহজে</p>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          rowGap: '0.5rem',
+        }}
+      >
+        <h1 className={styles.title}>Demystifying Lab</h1>
+        <h3 className={styles.subtitle}>
+          Make Difference through Small Changes
+        </h3>
+        <h2 className={styles.tagline}>এখন সবকিছু শেখা হবে আরও সহজে</h2>
+      </div>
       <Link href="/blog" className={styles.cta_button}>
-        পড়া শুরু করুন
+        চলুন শুরু করি
       </Link>
     </div>
   );
@@ -48,7 +60,6 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Hero />
-      <Featured />
     </main>
   );
 }

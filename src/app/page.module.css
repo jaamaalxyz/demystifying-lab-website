@@ -50,10 +50,10 @@
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 900;
-  margin-bottom: 50px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
 }
 
 .subtitle {
@@ -63,8 +63,9 @@
 }
 
 .tagline {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
+  text-align: center;
 }
 
 .cta_button {
@@ -191,18 +192,12 @@
   }
 
   .title {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 10px;
   }
 
-  .subtitle {
-    font-size: 1.2rem;
-  }
-
-  .tagline {
-    font-size: 1.5rem;
-  }
-
+  .subtitle,
+  .tagline,
   .cta_button {
     font-size: 1.2rem;
   }
