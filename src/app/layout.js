@@ -1,7 +1,6 @@
-import { Inter, Noto_Sans_Bengali } from 'next/font/google';
+import { Noto_Sans_Bengali } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
 const notoSansBengali = Noto_Sans_Bengali({
   weight: ['200', '400', '500', '600', '700', '900'],
   subsets: ['bengali', 'latin'],

@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 90vh;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .main {
+    min-height: 70vh;
+  }
+}
